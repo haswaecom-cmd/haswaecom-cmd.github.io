@@ -37,6 +37,13 @@
   .card{background:var(--cream);border-radius:16px;padding:28px;}
   .card h3{color:var(--plum);font-size:19px;margin-bottom:8px;}
   .card p{color:var(--muted);font-size:15px;}
+  .project{display:flex;align-items:center;gap:34px;background:var(--cream);border-radius:18px;padding:34px;}
+  .project-info{flex:1;}
+  .project-info h3{color:var(--plum);font-size:23px;margin-bottom:10px;}
+  .project-info p{color:var(--muted);margin-bottom:20px;}
+  .project-thumb{flex-shrink:0;}
+  .project-thumb svg{border-radius:18px;box-shadow:0 8px 24px rgba(63,29,54,.18);}
+  @media(max-width:760px){.project{flex-direction:column-reverse;text-align:center;}}
   .about{background:var(--cream);}
   .about p{font-size:17px;color:var(--ink);max-width:760px;}
   /* contact form */
@@ -59,6 +66,7 @@
       <div class="logo">Haswanth CS</div>
       <div>
         <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
@@ -86,44 +94,30 @@
     </div>
   </section>
 
+  <section id="projects">
+    <div class="wrap">
+      <div class="eyebrow">Featured Work</div>
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="project-info">
+          <h3>Client CRM Dashboard</h3>
+          <p>An interactive CRM web app for managing contacts, leads, and deals — clean UI, fast, and fully responsive. Built end to end as a live, working demo.</p>
+          <a href="crm.html" class="btn" target="_blank" rel="noopener">View Live Demo →</a>
+        </div>
+        <div class="project-thumb">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+            <rect width="100" height="100" rx="18" fill="#0F172A"></rect>
+            <rect x="30" y="30" width="40" height="40" rx="10" fill="#2563EB"></rect>
+            <path d="M38 52l6-10 6 14 6-12 6 6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="62" cy="40" r="3.5" fill="#10B981"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="about" class="about">
     <div class="wrap">
       <div class="eyebrow">About</div>
       <h2>Hi, I'm Haswanth.</h2>
-      <p>I'm an ebook ghostwriter and content specialist with a postgraduate background in Computer Applications (MCA). I combine AI-powered research with real editorial craft to deliver clean, original writing — never robotic. Every project comes with clear communication, on-time delivery, and full copyright transferred to you.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <div class="eyebrow">Get in Touch</div>
-      <h2>Tell me about your project</h2>
-
-      <!-- Netlify Forms: data-netlify="true" makes the backend automatic -->
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact">
-        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-
-        <div class="field">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="message">What do you need? (topic, length, deadline)</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send message</button>
-        <p class="note">Or email me directly at haswaecom@gmail.com</p>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Haswanth CS · Ebook &amp; Lead Magnet Writer · Trichy, India
-  </footer>
-</body>
-</html>
+      <p>I'm an ebook ghostwriter and con
