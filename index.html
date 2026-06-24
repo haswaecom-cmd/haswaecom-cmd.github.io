@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haswanth CS — Ebook & Lead Magnet Writer</title>
+<style>
+  :root{
+    --plum:#5b2a4d; --plum-deep:#3f1d36; --accent:#c06b8e; --blush:#e8c9d6;
+    --cream:#f7eef2; --ink:#2c2530; --muted:#7a6e76; --line:#e7dbe1;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Segoe UI',system-ui,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff;}
+  a{color:var(--accent);text-decoration:none;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  /* nav */
+  nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;}
+  nav .logo{font-weight:700;font-size:20px;color:var(--plum);}
+  nav a{margin-left:22px;color:var(--ink);font-weight:500;}
+  nav a:hover{color:var(--accent);}
+  /* hero */
+  header{background:linear-gradient(135deg,var(--plum-deep),var(--plum));color:#fff;}
+  .hero{padding:80px 0 90px;text-align:center;}
+  .hero .tag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid var(--accent);
+    color:var(--blush);padding:6px 16px;border-radius:30px;font-size:14px;letter-spacing:1px;margin-bottom:22px;}
+  .hero h1{font-size:46px;line-height:1.15;margin-bottom:16px;}
+  .hero h1 span{color:var(--blush);font-style:italic;}
+  .hero p{font-size:19px;color:rgba(255,255,255,.85);max-width:620px;margin:0 auto 30px;}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 34px;border-radius:30px;
+    font-weight:600;font-size:16px;border:none;cursor:pointer;transition:transform .15s;}
+  .btn:hover{transform:translateY(-2px);color:#fff;}
+  /* sections */
+  section{padding:70px 0;}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;font-size:14px;text-transform:uppercase;}
+  h2{font-size:32px;color:var(--plum);margin:8px 0 26px;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{background:var(--cream);border-radius:16px;padding:28px;}
+  .card h3{color:var(--plum);font-size:19px;margin-bottom:8px;}
+  .card p{color:var(--muted);font-size:15px;}
+  .about{background:var(--cream);}
+  .about p{font-size:17px;color:var(--ink);max-width:760px;}
+  /* contact form */
+  .contact{background:#fff;}
+  form{max-width:560px;margin-top:10px;}
+  .field{margin-bottom:18px;}
+  label{display:block;font-weight:600;margin-bottom:6px;font-size:15px;}
+  input,textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;
+    font-size:15px;font-family:inherit;}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent);}
+  textarea{min-height:130px;resize:vertical;}
+  .note{font-size:14px;color:var(--muted);margin-top:14px;}
+  footer{background:var(--plum-deep);color:rgba(255,255,255,.8);text-align:center;padding:30px 0;font-size:14px;}
+  @media(max-width:760px){.grid{grid-template-columns:1fr;}.hero h1{font-size:34px;}nav a{margin-left:14px;}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">Haswanth CS</div>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <header>
+    <div class="wrap hero">
+      <span class="tag">EBOOK &amp; LEAD MAGNET WRITER</span>
+      <h1>Done-for-you ebooks &amp; lead magnets, <span>written and designed.</span></h1>
+      <p>I help coaches, creators, and small businesses turn their ideas into polished, ready-to-sell ebooks, lead magnets, and digital guides — original, on-brand, and KDP-ready.</p>
+      <a href="#contact" class="btn">Start your project</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="eyebrow">What I Do</div>
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card"><h3>Ebook Writing</h3><p>Original, engaging ebooks in any non-fiction niche — written and structured to actually get read.</p></div>
+        <div class="card"><h3>Lead Magnets</h3><p>Short, high-value PDF guides and checklists that grow your email list and attract clients.</p></div>
+        <div class="card"><h3>Design &amp; Formatting</h3><p>Custom covers, clean layouts, and Kindle KDP / EPUB-ready files. Print and digital.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <div class="eyebrow">About</div>
+      <h2>Hi, I'm Haswanth.</h2>
+      <p>I'm an ebook ghostwriter and content specialist with a postgraduate background in Computer Applications (MCA). I combine AI-powered research with real editorial craft to deliver clean, original writing — never robotic. Every project comes with clear communication, on-time delivery, and full copyright transferred to you.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Tell me about your project</h2>
+
+      <!-- Netlify Forms: data-netlify="true" makes the backend automatic -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">What do you need? (topic, length, deadline)</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+        <p class="note">Or email me directly at haswaecom@gmail.com</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Haswanth CS · Ebook &amp; Lead Magnet Writer · Trichy, India
+  </footer>
+</body>
+</html>
